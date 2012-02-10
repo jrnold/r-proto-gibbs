@@ -138,7 +138,7 @@ GibbsSampler <- proto(expr = {
 
         ## Progress bar
         if (verbose) {
-            pb <- txtProgressBar(0, totlen, 3)
+            pb <- txtProgressBar(min = 0, max = totlen, style = 3)
         }
         for (j in seq_len(totlen)) {
             ## Set iteration value
